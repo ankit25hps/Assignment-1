@@ -10,9 +10,7 @@ import App from './App';
 
  test("test 1",()=>{
    render(<App />)
-
 //   //logRoles(screen.getByTestId("hello"))
-
    const buttonElem =screen.getByRole("button",{name :'Register',exact:false})
   expect(buttonElem).toBeInTheDocument()
  
@@ -67,19 +65,18 @@ test("test 7",()=>{
  
 
 })
-test("test 6",()=>{
+test("test 8",()=>{
   const components=render (<App/>);
  // console.log(components);
  const AppValue=components.getByText("Confirm Password")
   expect(AppValue).toBeInTheDocument();
  
-
 })
-test("test 6",()=>{
+
+test("test 9",()=>{
   const components=render (<App/>);
  // console.log(components);
  const AppValue=components.getByText("Accept terms conditions")
   expect(AppValue).toBeInTheDocument();
  
-
 })
